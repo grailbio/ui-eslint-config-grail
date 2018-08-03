@@ -3,8 +3,6 @@
     "es6": true,
     "node": true
   },
-  "extends": [
-    "@grail/eslint-config-grail/src/base"
-  ],
-  "plugins": ["import", "filenames"]
+  "extends": ["@grail/eslint-config-grail/src/base"],
+  "plugins": ["filenames"]
 }

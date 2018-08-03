@@ -10,10 +10,8 @@ module.exports = {
     jest: true,
     node: true,
   },
-  extends: [
-    "@grail/eslint-config-grail/src/base.js",
-  ],
-  plugins: ["import", "react", "filenames"],
+  extends: ["@grail/eslint-config-grail/src/base.js"],
+  plugins: ["sort-imports-es6-autofix", "react", "filenames"],
   parserOptions: {
     allowImportExportEverywhere: false,
     ecmaFeatures: {
@@ -29,11 +27,9 @@ module.exports = {
     "react/jsx-no-bind": [0],
     "react/prop-types": 0,
     "react/jsx-filename-extension": [
-      2, {
-        extensions: [
-          ".spec.js",
-          ".jsx",
-        ],
+      2,
+      {
+        extensions: [".spec.js", ".jsx"],
       },
     ],
     "react/jsx-first-prop-new-line": [1, "multiline-multiprop"],

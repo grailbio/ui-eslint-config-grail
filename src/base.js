@@ -9,13 +9,8 @@ module.exports = {
     jest: true,
     node: true,
   },
-  extends: [
-    "eslint-config-airbnb",
-  ],
-  plugins: [
-    "import",
-    "filenames",
-  ],
+  extends: ["eslint-config-airbnb"],
+  plugins: ["filenames", "sort-imports-es6-autofix"],
   settings: {
     "import/resolver": {
       node: {
@@ -43,9 +38,14 @@ module.exports = {
       },
     ],
     "filenames/match-regex": [2, "^[0-9a-z-]{2,}(.spec|.config)?$", true],
-    "import/newline-after-import": ["error", { count: 1 }],
+    // disable airbnb `import/order` default, which conflicts with `sort-imports-es6-autofix`.
+    "import/order": 0,
     "import/prefer-default-export": 0,
-    "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { exceptAfterSingleLine: true },
+    ],
     "max-len": [
       "error",
       120,
@@ -67,18 +67,15 @@ module.exports = {
     ],
     "no-alert": "error",
     "no-console": [
-      "error", {
-        allow: [
-          "warn",
-          "error",
-          "debug",
-          "info",
-        ],
+      "error",
+      {
+        allow: ["warn", "error", "debug", "info"],
       },
     ],
     "no-duplicate-imports": "error",
     "no-multiple-empty-lines": [
-      "error", {
+      "error",
+      {
         max: 1,
         maxBOF: 0,
         maxEOF: 1,
@@ -92,9 +89,21 @@ module.exports = {
     "no-underscore-dangle": 0,
     "no-unused-expressions": [
       "error",
-      { allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: false },
+      {
+        allowShortCircuit: true,
+        allowTernary: true,
+        allowTaggedTemplates: false,
+      },
     ],
     "no-unused-vars": [2, { varsIgnorePattern: "^__" }],
     "no-useless-call": "error",
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      "error",
+      {
+        ignoreCase: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ["none", "single", "all", "multiple"],
+      },
+    ],
   },
 };

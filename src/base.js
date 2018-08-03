@@ -100,7 +100,7 @@ module.exports = {
     "sort-imports-es6-autofix/sort-imports-es6": [
       "error",
       {
-        ignoreCase: true,
+        ignoreCase: false,
         ignoreMemberSort: false,
         memberSyntaxSortOrder: ["none", "single", "all", "multiple"],
       },

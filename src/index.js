@@ -1,1 +1,1 @@
-module.export = require("./front-end");
+module.exports = require("./front-end");

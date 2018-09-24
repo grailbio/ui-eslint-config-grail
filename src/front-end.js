@@ -15,9 +15,9 @@ module.exports = {
   parserOptions: {
     allowImportExportEverywhere: false,
     ecmaFeatures: {
-      experimentalObjectRestSpread: true,
       jsx: true,
     },
+    ecmaVersion: 2018,
     sourceType: "module",
   },
   rules: {

@@ -9,9 +9,7 @@ module.exports = {
     jest: true,
     node: true,
   },
-  extends: [
-    "plugin:flowtype/recommended",
-  ],
+  extends: ["plugin:flowtype/recommended"],
   plugins: ["flowtype"],
   rules: {
     "flowtype/require-valid-file-annotation": [

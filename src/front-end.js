@@ -10,7 +10,7 @@ module.exports = {
     jest: true,
     node: true,
   },
-  extends: ["@grail/eslint-config-grail/src/base.js"],
+  extends: ["eslint-config-airbnb", "@grail/eslint-config-grail/src/base.js"],
   plugins: ["sort-imports-es6-autofix", "react", "filenames"],
   parserOptions: {
     allowImportExportEverywhere: false,

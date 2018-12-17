@@ -9,7 +9,6 @@ module.exports = {
     jest: true,
     node: true,
   },
-  extends: ["eslint-config-airbnb"],
   plugins: ["filenames", "sort-imports-es6-autofix"],
   settings: {
     "import/resolver": {

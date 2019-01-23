@@ -11,7 +11,7 @@ module.exports = {
     node: true,
   },
   extends: ["eslint-config-airbnb", "@grail/eslint-config-grail/src/base.js"],
-  plugins: ["sort-imports-es6-autofix", "react", "filenames"],
+  plugins: ["sort-imports-es6-autofix", "react", "react-hooks", "filenames"],
   parserOptions: {
     allowImportExportEverywhere: false,
     ecmaFeatures: {
@@ -33,5 +33,6 @@ module.exports = {
       },
     ],
     "react/jsx-first-prop-new-line": [1, "multiline-multiprop"],
+    "react-hooks/rules-of-hooks": "error",
   },
 };

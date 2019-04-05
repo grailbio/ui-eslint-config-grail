@@ -29,7 +29,7 @@ module.exports = {
     "react/jsx-filename-extension": [
       2,
       {
-        extensions: [".spec.js", ".jsx"],
+        extensions: [".spec.js", ".jsx", ".tsx"],
       },
     ],
     "react/jsx-first-prop-new-line": [1, "multiline-multiprop"],

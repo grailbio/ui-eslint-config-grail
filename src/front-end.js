@@ -34,5 +34,6 @@ module.exports = {
     ],
     "react/jsx-first-prop-new-line": [1, "multiline-multiprop"],
     "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
   },
 };

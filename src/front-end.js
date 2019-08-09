@@ -33,6 +33,7 @@ module.exports = {
       },
     ],
     "react/jsx-first-prop-new-line": [1, "multiline-multiprop"],
+    "react/jsx-props-no-spreading": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
   },

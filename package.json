@@ -1,9 +1,10 @@
 {
   "private": false,
-  "name": "@grail/eslint-config-grail",
-  "version": "1.0.0",
+  "name": "@grailbio/eslint-config-grail",
+  "version": "1.0.2",
   "description": "GRAIL eslint config",
   "main": "src/index.js",
+  "homepage": "https://github.com/grailbio/ui-eslint-config-grail",
   "scripts": {
     "flow": "true",
     "format": "prettier --write \"src/**/*.js\" && yarn lint-fix",

@@ -3,6 +3,6 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: ["@grail/eslint-config-grail/src/base"],
+  extends: ["@grailbio/eslint-config-grail/src/base"],
   plugins: ["filenames"]
 };

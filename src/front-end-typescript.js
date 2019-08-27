@@ -1,7 +1,7 @@
 // @flow
 module.exports = {
   extends: [
-    "@grail/eslint-config-grail/src/front-end.js",
+    "@grailbio/eslint-config-grail/src/front-end.js",
     "plugin:@typescript-eslint/recommended",
   ],
   parser: "@typescript-eslint/parser",

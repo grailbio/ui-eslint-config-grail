@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "name": "@grail/eslint-config-grail",
   "version": "1.0.0",
   "description": "GRAIL eslint config",

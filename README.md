@@ -4,7 +4,16 @@ The `@grailbio/eslint-config-grail` package contains ESLint rules for GRAIL UI c
 
 ## Contributing
 
-**ALL CHANGES MUST BE REVIEWED BY UI LEADS IN LIMS and EDC. ALSO CONSIDER ADDING OTHER TEAMS**
+**ALL CHANGES MUST BE REVIEWED SOMEONE IN LIMS and EDC. ALSO CONSIDER ADDING OTHER TEAMS**
+
+This project is open sourced. All content must be non-proprietary. For example:
+
+- Do not include GRAIL assets, like GRAIL Logo, or commercially sourced images.
+- Do not include content that has trade secrets or anything that should remain internal to GRAIL.
+
+For common private GRAIL code, use `@grail/common-private` or other internal locations.
+
+Modify CHANGELOG.md to reflect contributions to this code.
 
 ### Distributing to GitHub
 
@@ -26,9 +35,10 @@ Recommend turning on 2FA.
 
 To publish:
 
-- You may need to bump the package version. (Also update `CHANGELOG.md`)
+- Bump the package version following semantic versioning guidelines (https://semver.org/)
+- For non-patch release, update `CHANGELOG.md` version.
 - `npm publish --access public`
-- Optionally, you can pass in 2FA code using `--otp ######`
+  - Optionally, you can pass in 2FA code using `--otp ######`
 
 ## Basic Setup
 

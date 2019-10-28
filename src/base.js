@@ -46,25 +46,6 @@ module.exports = {
       "always",
       { exceptAfterSingleLine: true },
     ],
-    "max-len": [
-      "error",
-      120,
-      2,
-      {
-        ignoreUrls: true,
-        ignoreComments: false,
-        ignoreRegExpLiterals: true,
-        ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-      },
-    ],
-    quotes: [
-      "error",
-      "double",
-      {
-        avoidEscape: true,
-      },
-    ],
     "no-alert": "error",
     "no-console": [
       "error",
@@ -97,6 +78,13 @@ module.exports = {
     ],
     "no-unused-vars": [2, { varsIgnorePattern: "^__" }],
     "no-useless-call": "error",
+    quotes: [
+      "error",
+      "double",
+      {
+        avoidEscape: true,
+      },
+    ],
     "sort-imports-es6-autofix/sort-imports-es6": [
       "error",
       {

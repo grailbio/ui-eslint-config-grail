@@ -13,6 +13,8 @@ module.exports = {
   extends: [
     "eslint-config-airbnb",
     "@grailbio/eslint-config-grail/src/base.js",
+    "plugin:prettier/recommended",
+    "prettier/react",
   ],
   plugins: ["sort-imports-es6-autofix", "react", "react-hooks", "filenames"],
   parserOptions: {
@@ -26,7 +28,6 @@ module.exports = {
   rules: {
     // REACT
     "react/display-name": "off",
-    "react/jsx-max-props-per-line": [1, { maximum: 1, when: "always" }],
     "react/jsx-no-bind": [0],
     "react/prop-types": 0,
     "react/jsx-filename-extension": [

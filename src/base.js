@@ -37,7 +37,7 @@ module.exports = {
         functions: "ignore",
       },
     ],
-    "filenames/match-regex": [2, "^[0-9a-z-]{2,}(.spec|.config|.d)?$", true],
+    "filenames/match-regex": [2, "^[0-9a-z-]{2,}(.d|.spec|.config)?$", true],
     // disable airbnb `import/order` default, which conflicts with `sort-imports-es6-autofix`.
     "import/order": 0,
     "import/prefer-default-export": 0,

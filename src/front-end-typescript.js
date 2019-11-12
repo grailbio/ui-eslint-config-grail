@@ -1,4 +1,3 @@
-// @flow
 module.exports = {
   extends: [
     "@grailbio/eslint-config-grail/src/front-end.js",

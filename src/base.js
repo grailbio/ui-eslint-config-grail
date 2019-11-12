@@ -1,4 +1,3 @@
-// @flow
 module.exports = {
   globals: {
     grail: true,

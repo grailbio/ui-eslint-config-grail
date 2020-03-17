@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "homepage": "https://github.com/grailbio/ui-eslint-config-grail",
   "scripts": {
-    "flow": "true",
+    "check-types": "true",
     "format": "prettier --write \"src/**/*.js\" && yarn lint-fix",
     "lint": "eslint --ext .js --ext .jsx src/",
     "lint-fix": "yarn lint --fix",
